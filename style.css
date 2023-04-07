@@ -9,6 +9,7 @@
     position: fixed;
     width: 100px;
 }
+
 .gameBackground {
     background-image: url(./assets/BACKGROUND5.webp);
     background-size: cover;
@@ -23,8 +24,10 @@
 /* left container */
 
 .gameContainer {
-    margin-top: 50px;
-    width: 410px;
+    margin-top: 85px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    width: 510px;
     box-shadow: 3px 4px 6px 2px rgba(20, 21, 21, 0.8);
     display: flex;
     flex-wrap: wrap;
@@ -37,9 +40,9 @@
 }
 
 #movesLeft {
-    margin-top: 55px;
     font-size: 50px;
     color: #fff;
+    margin-left: 40px;
 }
 
 
@@ -47,8 +50,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    padding: 0px 0px 200px 0px;
     margin: 0 auto;
     text-align: center;
 }
@@ -104,6 +107,7 @@
     font-size: 16px;
     font-weight: 900;
     padding: 10px;
+    padding-left: 50px;
     background: transparent;
     border: 0px;
     color: white;
@@ -112,15 +116,16 @@
 #imageGuide {
     position: fixed;
     top: 170px;
-    left: 1100px;
+    right: 100px;
     display: none;
 }
 
 /* start */
 #startImage {
-    position: fixed;
-    top: 149px;
-    left: 540px;
+    position: absolute;
+    top: 50%;
+    left: 51.5%;
+    transform: translate(-50%, -50%);
     background-image: url(./assets/introbackground.webp);
     background-size: contain;
     background-repeat: no-repeat;
@@ -130,7 +135,7 @@
 }
 
 #titleImage {
-    width: 455px;
+    width: 600px;
 }
 
 #startButton {
@@ -142,7 +147,7 @@
     border: 5px solid #db5a04;
     width: 300px;
     position: absolute;
-    top: 320px;
+    top: 420px;
 }
 
 /* media query */
